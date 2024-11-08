@@ -1,0 +1,77 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    padding: 20px;
+    background-image: url("./pexels-kaip-1341279.jpg");
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+   
+    position: fixed; 
+    top: 0;
+    z-index: 200;
+}
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+    width: 90vw;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+
+.box {
+    background-image: url("./pexels-kaip-1341279.jpg");
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1em;
+    overflow-y: auto;
+}
+
+.box1 {
+    grid-column: span 2;
+    background-color: rgba(34, 34, 34, 0.8);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px;
+}
+
+
+p {
+    font-size: 1em;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+
+video {
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
